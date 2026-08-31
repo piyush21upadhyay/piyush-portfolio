@@ -10,7 +10,7 @@
 }
 
 .about__text {
-  color: #a0b4c8;
+  color: #374151;
   line-height: 1.8;
   font-size: 1rem;
   margin-bottom: 1.5rem;
@@ -23,36 +23,41 @@
 }
 
 .about__link {
-  color: #64dcff;
+  color: #7c3aed;
   text-decoration: none;
   font-size: 0.9rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  transition: opacity 0.2s;
+  font-weight: 500;
+  transition: color 0.2s;
 }
 
-.about__link:hover { opacity: 0.75; }
+.about__link:hover { color: #ec4899; }
 
 .about__link-icon {
   display: inline-flex;
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   align-items: center;
   justify-content: center;
-  border: 1px solid #64dcff;
-  border-radius: 3px;
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  border-radius: 4px;
   font-size: 0.7rem;
-  color: #64dcff;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .about__subtitle {
-  color: #64dcff;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.85rem;
+  font-weight: 700;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
+  background: linear-gradient(135deg, #7c3aed, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .about__achievements-title {
@@ -66,17 +71,17 @@
   gap: 0.2rem;
   margin-bottom: 0.75rem;
   padding-bottom: 0.75rem;
-  border-bottom: 1px solid rgba(100, 220, 255, 0.08);
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .about__tech-category {
-  color: #ffffff;
-  font-weight: 600;
+  color: #1a1a2e;
+  font-weight: 700;
   font-size: 0.9rem;
 }
 
 .about__tech-details {
-  color: #6a8099;
+  color: #6b7280;
   font-size: 0.85rem;
 }
 
@@ -87,28 +92,34 @@
 }
 
 .achievement-card {
-  background: rgba(100, 220, 255, 0.05);
-  border: 1px solid rgba(100, 220, 255, 0.15);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 1.25rem;
-  transition: transform 0.2s, border-color 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: #fff;
 }
 
+.achievement-card:nth-child(6n+1) { background: linear-gradient(135deg, #667eea, #764ba2); }
+.achievement-card:nth-child(6n+2) { background: linear-gradient(135deg, #f093fb, #f5576c); }
+.achievement-card:nth-child(6n+3) { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+.achievement-card:nth-child(6n+4) { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+.achievement-card:nth-child(6n+5) { background: linear-gradient(135deg, #fa709a, #fee140); }
+.achievement-card:nth-child(6n+6) { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
+
 .achievement-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(100, 220, 255, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
 .achievement-card__metric {
-  color: #64dcff;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1rem;
   margin-bottom: 0.5rem;
+  color: rgba(255,255,255,0.95);
 }
 
 .achievement-card__desc {
-  color: #a0b4c8;
   font-size: 0.875rem;
   line-height: 1.6;
   margin: 0;
+  color: rgba(255,255,255,0.85);
 }
