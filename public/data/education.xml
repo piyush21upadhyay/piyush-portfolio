@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<education>
+  <institution>
+    <name>Madan Mohan Malaviya Engineering College (MMMEC)</name>
+    <degree>Bachelor of Technology (BTech)</degree>
+    <field>Electrical, Electronics and Communications Engineering</field>
+    <startYear>2008</startYear>
+    <endYear>2012</endYear>
+  </institution>
+  <institution>
+    <name>Mahanagar Boys' Inter College (now MontFort Inter College), Lucknow</name>
+    <degree>Intermediate</degree>
+    <field>Physics, Chemistry and Mathematics</field>
+    <startYear></startYear>
+    <endYear></endYear>
+  </institution>
+  <institution>
+    <name>Mahanagar Boys' Inter College (now MontFort Inter College), Lucknow</name>
+    <degree>High School</degree>
+    <field></field>
+    <startYear></startYear>
+    <endYear></endYear>
+  </institution>
+</education>

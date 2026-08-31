@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+  <name>Piyush Upadhyay</name>
+  <title>Principal Software Engineer</title>
+  <tagline>Building Scalable Systems with Java, GCP &amp; Kubernetes | Innovating One Microservice at a Time | Crafting Cloud-Native Solutions (Spring Boot, Docker, MongoDB, Python)</tagline>
+  <location>Noida, Uttar Pradesh, India</location>
+  <email>piyush21upadhyay@gmail.com</email>
+  <linkedin>https://www.linkedin.com/in/piyush-upadhyay-java</linkedin>
+  <yearsOfExperience>13+</yearsOfExperience>
+  <summary>With 13+ years of experience, I specialize in building scalable, cloud-native architectures and driving high-performance engineering solutions. My expertise spans Java, Spring Boot, Kubernetes, and GCP, with a deep focus on distributed systems, microservices, and AI-driven automation.</summary>
+  <achievements>
+    <achievement>
+      <metric>40% Performance Boost</metric>
+      <description>Optimized microservices using Spring Boot &amp; Kafka, reducing response times significantly.</description>
+    </achievement>
+    <achievement>
+      <metric>50% Ops Overhead Reduction</metric>
+      <description>Migrated legacy services to Kubernetes &amp; GCP, improving scalability &amp; automation.</description>
+    </achievement>
+    <achievement>
+      <metric>30% Cost Savings</metric>
+      <description>Designed cost-efficient cloud architectures, optimizing compute &amp; storage resources.</description>
+    </achievement>
+    <achievement>
+      <metric>AI-Powered Chatbot Framework</metric>
+      <description>Developed an NLP-based chatbot using Rasa NLU, enhancing automation and customer interactions.</description>
+    </achievement>
+    <achievement>
+      <metric>25% Faster Issue Resolution</metric>
+      <description>Enhanced monitoring &amp; logging with Dynatrace &amp; Splunk, improving system reliability.</description>
+    </achievement>
+    <achievement>
+      <metric>40% Reduction in Manual Efforts</metric>
+      <description>Automated infrastructure provisioning using Terraform, Helm &amp; GitHub Actions.</description>
+    </achievement>
+  </achievements>
+  <technicalFocus>
+    <area>
+      <category>Cloud &amp; DevOps</category>
+      <details>GCP (GKE, Cloud Run, Cloud Functions), Kubernetes, Docker, Terraform, CI/CD Pipelines</details>
+    </area>
+    <area>
+      <category>Backend &amp; APIs</category>
+      <details>Java, Spring Boot, REST APIs, Microservices, Python (Pandas, NumPy)</details>
+    </area>
+    <area>
+      <category>AI &amp; NLP</category>
+      <details>Rasa NLU, Generative AI, Speech Recognition, Prompt Engineering</details>
+    </area>
+    <area>
+      <category>Security &amp; Compliance</category>
+      <details>OAuth2.0, IAM, Authentication &amp; Cloud Security Best Practices</details>
+    </area>
+    <area>
+      <category>Leadership &amp; Mentorship</category>
+      <details>Driving engineering excellence, architecture reviews &amp; team development</details>
+    </area>
+  </technicalFocus>
+</profile>

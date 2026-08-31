@@ -1,0 +1,44 @@
+.edu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 700px;
+}
+
+.edu-card {
+  display: flex;
+  gap: 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(100, 220, 255, 0.1);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.edu-card:hover { border-color: rgba(100, 220, 255, 0.3); }
+
+.edu-card__icon { font-size: 1.75rem; flex-shrink: 0; }
+
+.edu-card__degree {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.2rem;
+}
+
+.edu-card__field {
+  color: #64dcff;
+  font-size: 0.875rem;
+  margin: 0 0 0.2rem;
+}
+
+.edu-card__institution {
+  color: #a0b4c8;
+  font-size: 0.85rem;
+  margin: 0 0 0.3rem;
+}
+
+.edu-card__years {
+  color: #6a8099;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skills>
+  <category name="Cloud &amp; DevOps">
+    <skill level="Expert">GCP (GKE, Cloud Run, Cloud Functions)</skill>
+    <skill level="Expert">Kubernetes</skill>
+    <skill level="Expert">Docker</skill>
+    <skill level="Expert">Terraform</skill>
+    <skill level="Advanced">CI/CD Pipelines (GitHub Actions, Jenkins)</skill>
+    <skill level="Advanced">Helm</skill>
+    <skill level="Advanced">Splunk Cloud</skill>
+    <skill level="Advanced">Grafana</skill>
+    <skill level="Advanced">Dynatrace</skill>
+  </category>
+  <category name="Backend &amp; APIs">
+    <skill level="Expert">Java (8/11/17)</skill>
+    <skill level="Expert">Spring Boot</skill>
+    <skill level="Expert">REST APIs</skill>
+    <skill level="Expert">Microservices Architecture</skill>
+    <skill level="Expert">Java Virtual Machine (JVM)</skill>
+    <skill level="Advanced">Low-Level Design</skill>
+    <skill level="Advanced">Python (Pandas, NumPy)</skill>
+    <skill level="Advanced">Apache Kafka</skill>
+    <skill level="Advanced">JPA / Hibernate</skill>
+    <skill level="Advanced">Spring Framework</skill>
+    <skill level="Intermediate">AngularJS</skill>
+  </category>
+  <category name="Databases">
+    <skill level="Expert">PostgreSQL</skill>
+    <skill level="Expert">MongoDB</skill>
+    <skill level="Advanced">MySQL</skill>
+    <skill level="Advanced">DB2</skill>
+  </category>
+  <category name="AI &amp; NLP">
+    <skill level="Advanced">Rasa NLU</skill>
+    <skill level="Advanced">Generative AI</skill>
+    <skill level="Advanced">Prompt Engineering</skill>
+    <skill level="Intermediate">Speech Recognition</skill>
+    <skill level="Intermediate">Machine Learning</skill>
+  </category>
+  <category name="Security">
+    <skill level="Expert">OAuth2.0</skill>
+    <skill level="Advanced">IAM</skill>
+    <skill level="Advanced">Cloud Security Best Practices</skill>
+  </category>
+  <category name="Messaging &amp; Integration">
+    <skill level="Advanced">Apache Kafka</skill>
+    <skill level="Advanced">Apache Camel</skill>
+    <skill level="Advanced">ActiveMQ</skill>
+    <skill level="Advanced">JBoss Fuse</skill>
+    <skill level="Advanced">Dell Boomi</skill>
+  </category>
+  <languages>
+    <language proficiency="Full Professional">English</language>
+    <language proficiency="Native">Hindi</language>
+  </languages>
+</skills>
