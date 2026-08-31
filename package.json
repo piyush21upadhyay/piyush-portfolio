@@ -1,7 +1,8 @@
 {
-  "name": "piyush-portfolio-app",
+  "name": "piyush-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://piyush21upadhyay.github.io/piyush-portfolio",
   "dependencies": {
     "@reduxjs/toolkit": "^2.12.0",
     "@testing-library/dom": "^10.4.1",
