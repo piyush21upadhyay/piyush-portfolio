@@ -209,10 +209,17 @@ The `level` attribute controls the bar width. Allowed values: `Expert`, `Advance
 ## Running Locally
 
 ```bash
-# Install dependencies (only needed once)
+# 1. Clone the repository
+git clone https://github.com/piyush21upadhyay/piyush-portfolio.git
+cd piyush-portfolio
+
+# 2. Install the branch-protection git hook (run once after cloning)
+sh setup.sh
+
+# 3. Install dependencies
 npm install
 
-# Start the development server at http://localhost:3000
+# 4. Start the development server at http://localhost:3000
 npm start
 ```
 
