@@ -24,29 +24,34 @@
   padding: 0.75rem 1rem;
   background: transparent;
   border: none;
-  border-left: 2px solid rgba(100, 220, 255, 0.15);
+  border-left: 3px solid #e5e7eb;
   cursor: pointer;
   transition: all 0.2s;
+  border-radius: 0 6px 6px 0;
 }
 
-.exp__company-btn:hover,
+.exp__company-btn:hover {
+  border-left-color: #ec4899;
+  background: #fdf2f8;
+}
+
 .exp__company-btn--active {
-  border-left-color: #64dcff;
-  background: rgba(100, 220, 255, 0.05);
+  border-left-color: #7c3aed;
+  background: linear-gradient(90deg, rgba(124,58,237,0.08), transparent);
 }
 
 .exp__company-name {
-  color: #e0eaf0;
+  color: #374151;
   font-weight: 600;
   font-size: 0.9rem;
 }
 
 .exp__company-btn--active .exp__company-name {
-  color: #64dcff;
+  color: #7c3aed;
 }
 
 .exp__company-duration {
-  color: #6a8099;
+  color: #9ca3af;
   font-size: 0.75rem;
   margin-top: 0.15rem;
 }
@@ -58,14 +63,23 @@
 }
 
 .role-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(100, 220, 255, 0.1);
-  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
   padding: 1.5rem;
-  transition: border-color 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s, transform 0.2s;
+  border-top: 4px solid transparent;
 }
 
-.role-card:hover { border-color: rgba(100, 220, 255, 0.3); }
+.role-card:nth-child(3n+1) { border-top-color: #7c3aed; }
+.role-card:nth-child(3n+2) { border-top-color: #ec4899; }
+.role-card:nth-child(3n+3) { border-top-color: #f59e0b; }
+
+.role-card:hover {
+  box-shadow: 0 8px 24px rgba(124,58,237,0.12);
+  transform: translateY(-2px);
+}
 
 .role-card__header {
   display: flex;
@@ -78,14 +92,15 @@
 
 .role-card__title {
   font-size: 1.1rem;
-  color: #ffffff;
+  color: #1a1a2e;
   font-weight: 700;
   margin: 0;
 }
 
 .role-card__company {
-  color: #64dcff;
+  color: #7c3aed;
   font-size: 0.85rem;
+  font-weight: 600;
   margin: 0.2rem 0 0;
 }
 
@@ -97,22 +112,23 @@
 }
 
 .role-card__dates {
-  color: #a0b4c8;
+  color: #374151;
   font-size: 0.85rem;
+  font-weight: 500;
 }
 
 .role-card__duration {
-  color: #6a8099;
+  color: #9ca3af;
   font-size: 0.8rem;
 }
 
 .role-card__location {
-  color: #6a8099;
+  color: #9ca3af;
   font-size: 0.8rem;
 }
 
 .role-card__desc {
-  color: #8a9eb0;
+  color: #4b5563;
   font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -128,7 +144,7 @@
 }
 
 .role-card__contributions li {
-  color: #a0b4c8;
+  color: #374151;
   font-size: 0.875rem;
   line-height: 1.6;
   padding-left: 1.25rem;
@@ -139,7 +155,8 @@
   content: '▸';
   position: absolute;
   left: 0;
-  color: #64dcff;
+  color: #ec4899;
+  font-weight: 700;
 }
 
 .role-card__stack {
@@ -150,10 +167,14 @@
 }
 
 .role-card__tag {
-  background: rgba(100, 220, 255, 0.08);
-  border: 1px solid rgba(100, 220, 255, 0.2);
-  color: #64dcff;
   font-size: 0.75rem;
-  padding: 0.2rem 0.6rem;
+  padding: 0.2rem 0.7rem;
   border-radius: 20px;
+  font-weight: 500;
 }
+
+.role-card__tag:nth-child(5n+1) { background: #ede9fe; color: #5b21b6; }
+.role-card__tag:nth-child(5n+2) { background: #fce7f3; color: #9d174d; }
+.role-card__tag:nth-child(5n+3) { background: #d1fae5; color: #065f46; }
+.role-card__tag:nth-child(5n+4) { background: #fef3c7; color: #92400e; }
+.role-card__tag:nth-child(5n+5) { background: #dbeafe; color: #1e40af; }
