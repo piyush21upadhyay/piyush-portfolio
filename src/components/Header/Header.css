@@ -117,16 +117,3 @@
     display: none;
   }
 }
-    gap: 0.75rem;
-  }
-
-  .header__nav {
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .header__nav-link {
-    font-size: 0.8rem;
-  }
-}
