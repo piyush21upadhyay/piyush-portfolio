@@ -1,0 +1,114 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .about__grid { grid-template-columns: 1fr; }
+}
+
+.about__text {
+  color: #a0b4c8;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about__link {
+  color: #64dcff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.2s;
+}
+
+.about__link:hover { opacity: 0.75; }
+
+.about__link-icon {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #64dcff;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  color: #64dcff;
+}
+
+.about__subtitle {
+  color: #64dcff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.about__achievements-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.about__tech-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(100, 220, 255, 0.08);
+}
+
+.about__tech-category {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.about__tech-details {
+  color: #6a8099;
+  font-size: 0.85rem;
+}
+
+.about__achievements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.achievement-card {
+  background: rgba(100, 220, 255, 0.05);
+  border: 1px solid rgba(100, 220, 255, 0.15);
+  border-radius: 8px;
+  padding: 1.25rem;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.achievement-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(100, 220, 255, 0.4);
+}
+
+.achievement-card__metric {
+  color: #64dcff;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-card__desc {
+  color: #a0b4c8;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin: 0;
+}

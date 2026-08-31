@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<experiences>
+  <company id="1">
+    <name>UKG</name>
+    <totalDuration>7 years 6 months</totalDuration>
+    <roles>
+      <role>
+        <title>Senior Staff Software Engineer</title>
+        <startDate>January 2026</startDate>
+        <endDate>Present</endDate>
+        <duration>8 months</duration>
+        <location>Noida, Uttar Pradesh, India</location>
+        <description>Leading engineering initiatives and driving cloud-native innovation at scale.</description>
+        <contributions>
+          <item>Engineered and deployed microservices using Spring Boot, Kafka, and GCP services, improving system response time by 40%.</item>
+          <item>Integrated OAuth2.0 for API authentication, enhancing security and streamlining user access control.</item>
+          <item>Leveraged GCP for Kubernetes-based deployments, using Splunk Cloud for logging and Grafana for real-time monitoring, ensuring system reliability and performance.</item>
+        </contributions>
+        <techStack></techStack>
+      </role>
+      <role>
+        <title>Principal Software Engineer</title>
+        <startDate>January 2023</startDate>
+        <endDate>December 2025</endDate>
+        <duration>3 years</duration>
+        <location>Noida, Uttar Pradesh, India</location>
+        <description>Designed, optimized, and scaled cloud-native solutions driving business success with deep expertise in Java, Kubernetes, and distributed architectures.</description>
+        <contributions>
+          <item>Engineered and deployed microservices using Spring Boot, Kafka, and GCP services, improving system response time by 40%.</item>
+          <item>Integrated OAuth2.0 for API authentication, enhancing security and streamlining user access control.</item>
+          <item>Leveraged GCP for Kubernetes-based deployments, using Splunk Cloud for logging and Grafana for real-time monitoring, ensuring system reliability and performance.</item>
+        </contributions>
+        <techStack>Java | Spring Boot | Kafka | GCP | Kubernetes | OAuth2.0 | Splunk | Grafana</techStack>
+      </role>
+      <role>
+        <title>Lead Software Engineer</title>
+        <startDate>March 2019</startDate>
+        <endDate>December 2022</endDate>
+        <duration>3 years 10 months</duration>
+        <location>Noida Area, India</location>
+        <description>Architected robust, scalable, and secure cloud solutions specializing in containerized deployments, cloud migration, and performance optimization.</description>
+        <contributions>
+          <item>Engineered and optimized RESTful APIs, leveraging PostgreSQL, Java 8, JPA, and Spring 3.x, with multithreading to enhance performance.</item>
+          <item>Integrated Dell Boomi as a third-party workflow automation platform, streamlining system orchestration.</item>
+          <item>Spearheaded the migration of monolithic applications to Kubernetes, boosting deployment speed and optimizing resource utilization.</item>
+        </contributions>
+        <techStack>Java 8 / J2EE | Spring Boot | PostgreSQL | Google Cloud Functions | GKE &amp; GCP | Dell Boomi | Python | Linux &amp; Shell Scripting</techStack>
+      </role>
+    </roles>
+  </company>
+  <company id="2">
+    <name>CenturyLink (Formerly Qwest)</name>
+    <totalDuration>2 years 8 months</totalDuration>
+    <roles>
+      <role>
+        <title>Senior Software Engineer</title>
+        <startDate>July 2016</startDate>
+        <endDate>February 2019</endDate>
+        <duration>2 years 8 months</duration>
+        <location>Noida Area, India</location>
+        <description>Played a pivotal role in designing, developing, and deploying scalable microservices for AI-powered chatbots, optimizing system performance, and enhancing automation capabilities.</description>
+        <contributions>
+          <item>Designed and developed JSON-based Spring Boot microservices for various chatbot solutions.</item>
+          <item>Customized the Hubot-Natural project to enable chatbot training via YAML files, integrating seamlessly with Rocket.Chat as the backend.</item>
+          <item>Implemented a NoSQL-driven architecture, storing chat conversations, intents, and attributes using MongoDB (NoSQLBooster as client).</item>
+          <item>Built containerized deployments, creating Docker images and deploying services on Kubernetes to ensure scalability and fault tolerance.</item>
+          <item>Developed and tested microservices using Postman and optimized APIs for performance and reliability.</item>
+          <item>Worked with enterprise technologies, including CXF-based SOAP web services, Apache Camel Routing, ActiveMQ, and JBoss Fuse 6.1, while leveraging Spring 4 as the core framework.</item>
+          <item>Followed Agile development methodologies, ensuring rapid iterations, high-quality releases, and continuous improvements.</item>
+        </contributions>
+        <techStack>Spring Boot | MongoDB | Docker | Kubernetes | Apache Camel | ActiveMQ | JBoss Fuse 6.1 | SOAP/REST | Agile</techStack>
+      </role>
+    </roles>
+  </company>
+  <company id="3">
+    <name>Genpact Headstrong Capital Markets</name>
+    <totalDuration>1 year</totalDuration>
+    <roles>
+      <role>
+        <title>Consultant</title>
+        <startDate>July 2015</startDate>
+        <endDate>June 2016</endDate>
+        <duration>1 year</duration>
+        <location>Noida Area, India</location>
+        <description>Worked as a Full Stack Developer on the Caremark project, particularly on the Registration module, delivering high-quality solutions under tight deadlines.</description>
+        <contributions>
+          <item>Developed and enhanced the Registration module, leveraging Java 7, Struts-based framework, and REST APIs to improve functionality and performance.</item>
+          <item>Designed and built multiple APIs, ensuring efficient data exchange and integration within the system.</item>
+          <item>Implemented front-end enhancements, working with HTML, CSS, JavaScript, and AngularJS to improve the UI/UX of various pages.</item>
+          <item>Got hands-on experience with Spring 4.x, Hibernate, and REST Web Services, strengthening backend expertise.</item>
+          <item>Engaged in multiple client calls, effectively gathering requirements, addressing concerns, and ensuring smooth project execution.</item>
+          <item>Worked in a fast-paced environment, quickly understanding the application landscape and delivering solutions on time despite challenges.</item>
+        </contributions>
+        <techStack>Java 7 | Struts | Spring 4.x | Hibernate | REST APIs | HTML | CSS | JavaScript | AngularJS</techStack>
+      </role>
+    </roles>
+  </company>
+  <company id="4">
+    <name>Tata Consultancy Services</name>
+    <totalDuration>2 years 10 months</totalDuration>
+    <roles>
+      <role>
+        <title>System Engineer</title>
+        <startDate>July 2013</startDate>
+        <endDate>June 2015</endDate>
+        <duration>2 years</duration>
+        <location>India</location>
+        <description>Worked as a Full Stack Developer contributing to enterprise-grade applications built on a customized framework called BOUNCE (Spring + Struts).</description>
+        <contributions>
+          <item>Developed and maintained enterprise applications using Java, Spring, and Struts, ensuring high-performance and maintainable code.</item>
+          <item>Worked on Java batch processing, handling large-scale data operations efficiently.</item>
+          <item>Designed and optimized database interactions with MySQL and DB2, ensuring data integrity and performance.</item>
+          <item>Deployed applications on JBoss Server, configuring and troubleshooting deployments for stability and efficiency.</item>
+          <item>Collaborated closely with cross-functional teams, participating in code reviews and following best development practices.</item>
+          <item>Enhanced system performance and scalability, optimizing existing implementations and troubleshooting critical production issues.</item>
+        </contributions>
+        <techStack>Java | Spring | Struts | MySQL | DB2 | JBoss Server | Batch Processing</techStack>
+      </role>
+      <role>
+        <title>Assistant System Engineer</title>
+        <startDate>September 2012</startDate>
+        <endDate>June 2013</endDate>
+        <duration>10 months</duration>
+        <location>India</location>
+        <description>Earned key certifications and built foundational enterprise application development skills.</description>
+        <contributions>
+          <item>Oracle Certified Java Programmer (OCJP) — earned during this period.</item>
+          <item>Oracle Certified Web Component Developer (OCWCD) — earned during this period.</item>
+          <item>Oracle Certified Associate (OCA) — earned during this period.</item>
+        </contributions>
+        <techStack>Java | J2EE | Oracle Technologies</techStack>
+      </role>
+    </roles>
+  </company>
+</experiences>

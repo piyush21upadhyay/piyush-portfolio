@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<certifications>
+  <certification>
+    <name>Oracle Certified Java Programmer (OCJP)</name>
+    <issuer>Oracle</issuer>
+    <code>1Z0-851</code>
+    <type>Professional</type>
+  </certification>
+  <certification>
+    <name>Oracle Certified Web Component Developer (OCWCD)</name>
+    <issuer>Oracle</issuer>
+    <code>1Z0-858</code>
+    <type>Professional</type>
+  </certification>
+  <certification>
+    <name>Oracle Certified Associate (OCA)</name>
+    <issuer>Oracle</issuer>
+    <code></code>
+    <type>Associate</type>
+  </certification>
+  <certification>
+    <name>Machine Learning by Andrew Ng</name>
+    <issuer>Coursera</issuer>
+    <code></code>
+    <type>Online</type>
+  </certification>
+  <certification>
+    <name>Python 101 for Data Science</name>
+    <issuer>IBM / Online Platform</issuer>
+    <code></code>
+    <type>Online</type>
+  </certification>
+  <certification>
+    <name>Introduction to Prompt Engineering for Generative AI</name>
+    <issuer>LinkedIn Learning</issuer>
+    <code></code>
+    <type>Online</type>
+  </certification>
+  <certification>
+    <name>Apache Kafka Essential Training: Building Scalable Applications</name>
+    <issuer>LinkedIn Learning</issuer>
+    <code></code>
+    <type>Online</type>
+  </certification>
+  <certification>
+    <name>Hands-On AI: Build an Autonomous Agent with the Claude Agent SDK</name>
+    <issuer>Online Platform</issuer>
+    <code></code>
+    <type>Online</type>
+  </certification>
+  <certification>
+    <name>Building AI-Powered Search with MongoDB Vector Search</name>
+    <issuer>MongoDB</issuer>
+    <code></code>
+    <type>Online</type>
+  </certification>
+</certifications>
