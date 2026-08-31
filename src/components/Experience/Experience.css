@@ -178,3 +178,48 @@
 .role-card__tag:nth-child(5n+3) { background: #d1fae5; color: #065f46; }
 .role-card__tag:nth-child(5n+4) { background: #fef3c7; color: #92400e; }
 .role-card__tag:nth-child(5n+5) { background: #dbeafe; color: #1e40af; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .experience__sidebar {
+    position: static;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  .exp__company-btn {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
+    padding: 0.5rem 0.75rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .exp__company-btn--active,
+  .exp__company-btn:hover {
+    border-bottom-color: #7c3aed;
+    background: rgba(124,58,237,0.05);
+  }
+
+  .role-card__header {
+    flex-direction: column;
+  }
+
+  .role-card__meta {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .role-card {
+    padding: 1rem;
+  }
+
+  .role-card__stack {
+    gap: 0.35rem;
+  }
+}

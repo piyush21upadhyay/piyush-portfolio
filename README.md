@@ -1,70 +1,267 @@
-# Getting Started with Create React App
+# Piyush Upadhyay — Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React + Redux portfolio website for **Piyush Upadhyay**, built with a data-driven architecture — all content is stored in XML files so non-technical users can update the website **without touching any code**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [How to Update Content (XML Files)](#how-to-update-content-xml-files)
+  - [profile.xml — Personal Info & Summary](#profilexml--personal-info--summary)
+  - [experience.xml — Work History](#experiencexml--work-history)
+  - [skills.xml — Skills & Languages](#skillsxml--skills--languages)
+  - [certifications.xml — Certifications](#certificationsxml--certifications)
+  - [awards.xml — Honors & Awards](#awardsxml--honors--awards)
+  - [education.xml — Education](#educationxml--education)
+- [Running Locally](#running-locally)
+- [Deployment](#deployment)
+- [Git Branching Rules](#git-branching-rules)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Update Content (XML Files)
 
-### `npm test`
+All content files are located in the `public/data/` folder:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+public/
+  data/
+    profile.xml
+    experience.xml
+    skills.xml
+    certifications.xml
+    awards.xml
+    education.xml
+```
 
-### `npm run build`
+> **Important rule:** Never delete the XML tags themselves — only change the **text between the tags**.  
+> Special characters like `&`, `<`, `>` must be written as `&amp;`, `&lt;`, `&gt;` in XML.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### profile.xml — Personal Info & Summary
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This file controls the **Hero section** (name, title, tagline) and the **About section** (summary, achievements, tech focus areas).
 
-### `npm run eject`
+**Location:** `public/data/profile.xml`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### To change name, title or location:
+```xml
+<name>Piyush Upadhyay</name>
+<title>Principal Software Engineer</title>
+<location>Noida, Uttar Pradesh, India</location>
+<email>piyush21upadhyay@gmail.com</email>
+<linkedin>https://www.linkedin.com/in/piyush-upadhyay-java</linkedin>
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### To update the summary paragraph:
+```xml
+<summary>Replace this entire text with your new summary.</summary>
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### To add a new achievement card:
+Find the `<achievements>` block and add a new entry:
+```xml
+<achievement>
+  <metric>60% Faster Deployments</metric>
+  <description>Introduced automated CI/CD pipelines reducing release time by 60%.</description>
+</achievement>
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### To add a new technical focus area:
+```xml
+<area>
+  <category>Data Engineering</category>
+  <details>Apache Spark, BigQuery, Dataflow, Pub/Sub</details>
+</area>
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### experience.xml — Work History
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Controls the **Experience section** with the company tab switcher.
 
-### Code Splitting
+**Location:** `public/data/experience.xml`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### To add a bullet point to an existing role:
+Find the `<contributions>` block inside the role and add:
+```xml
+<item>Your new contribution or achievement here.</item>
+```
 
-### Analyzing the Bundle Size
+#### To update dates or title of a role:
+```xml
+<title>Senior Staff Software Engineer</title>
+<startDate>January 2026</startDate>
+<endDate>Present</endDate>
+<duration>8 months</duration>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### To update the tech stack line of a role:
+```xml
+<techStack>Java | Spring Boot | Kafka | GCP | Kubernetes</techStack>
+```
+Separate each technology with ` | ` (space-pipe-space).
 
-### Making a Progressive Web App
+#### To add a brand new company:
+Paste this block before the closing `</experiences>` tag. Increment the `id` number:
+```xml
+<company id="5">
+  <name>New Company Name</name>
+  <totalDuration>1 year 6 months</totalDuration>
+  <roles>
+    <role>
+      <title>Your Job Title</title>
+      <startDate>January 2025</startDate>
+      <endDate>Present</endDate>
+      <duration>1 year 6 months</duration>
+      <location>City, Country</location>
+      <description>Brief description of what you did in this role.</description>
+      <contributions>
+        <item>Key contribution 1.</item>
+        <item>Key contribution 2.</item>
+      </contributions>
+      <techStack>Java | Docker | Kubernetes</techStack>
+    </role>
+  </roles>
+</company>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+### skills.xml — Skills & Languages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Controls the **Skills section** with progress bars.
 
-### Deployment
+**Location:** `public/data/skills.xml`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### To add a skill to an existing category:
+Find the `<category>` with the right `name` attribute and add a `<skill>` line:
+```xml
+<skill level="Advanced">GraphQL</skill>
+```
+The `level` attribute controls the bar width. Allowed values: `Expert`, `Advanced`, `Intermediate`.
 
-### `npm run build` fails to minify
+#### To add a completely new skills category:
+```xml
+<category name="Mobile Development">
+  <skill level="Intermediate">React Native</skill>
+  <skill level="Intermediate">Flutter</skill>
+</category>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### To add a spoken language:
+```xml
+<language proficiency="Basic">French</language>
+```
+
+---
+
+### certifications.xml — Certifications
+
+**Location:** `public/data/certifications.xml`
+
+#### To add a certification:
+```xml
+<certification>
+  <name>AWS Certified Solutions Architect</name>
+  <issuer>Amazon Web Services</issuer>
+  <code>SAA-C03</code>        <!-- Leave empty tags if no code: <code></code> -->
+  <type>Professional</type>   <!-- Options: Professional, Associate, Online -->
+</certification>
+```
+
+---
+
+### awards.xml — Honors & Awards
+
+**Location:** `public/data/awards.xml`
+
+#### To add an award:
+```xml
+<award>
+  <title>Excellence in Innovation Award</title>
+  <description>Recognized for outstanding innovation in cloud architecture.</description>
+</award>
+```
+
+---
+
+### education.xml — Education
+
+**Location:** `public/data/education.xml`
+
+#### To add an education entry:
+```xml
+<institution>
+  <name>Your University Name</name>
+  <degree>Master of Technology (MTech)</degree>
+  <field>Computer Science and Engineering</field>
+  <startYear>2012</startYear>
+  <endYear>2014</endYear>
+  <!-- Leave startYear/endYear empty if not applicable: <startYear></startYear> -->
+</institution>
+```
+
+---
+
+## Running Locally
+
+```bash
+# Install dependencies (only needed once)
+npm install
+
+# Start the development server at http://localhost:3000
+npm start
+```
+
+Changes to XML files are picked up on every **page refresh** — no code rebuild needed.
+
+---
+
+## Deployment
+
+The site auto-deploys to **GitHub Pages** whenever code is pushed/merged to the `develop` branch.
+
+**Live URL:** https://piyush21upadhyay.github.io/piyush-portfolio
+
+### First-time GitHub setup (do this once):
+1. Push the repository to GitHub: `git push -u origin develop`
+2. Go to your repository → **Settings → Pages**
+3. Under **Source**, select **GitHub Actions**
+4. Future pushes to `develop` will trigger an automatic deployment
+
+---
+
+## Git Branching Rules
+
+```
+main          ← production snapshot
+develop       ← protected: direct commits are BLOCKED by git hook
+  └── feature/your-feature-name   ← always work on a feature branch
+```
+
+### Workflow for every change (code or XML content):
+
+```bash
+# Step 1 — Start from develop
+git checkout develop
+
+# Step 2 — Create a new feature branch
+git checkout -b feature/your-change-name
+
+# Step 3 — Make your changes (edit XML files or code)
+
+# Step 4 — Stage and commit
+git add -A
+git commit -m "feat: describe what you changed"
+
+# Step 5 — Push to GitHub
+git push origin feature/your-change-name
+
+# Step 6 — Open a Pull Request on GitHub: feature/... → develop
+```
+
+> The local pre-commit hook will **refuse** any direct `git commit` while on the `develop` branch.
+> Always use a feature branch and merge via Pull Request.
