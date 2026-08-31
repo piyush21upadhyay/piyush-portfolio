@@ -22,6 +22,8 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: 0.03em;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .header__nav {

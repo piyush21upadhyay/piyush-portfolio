@@ -7,6 +7,7 @@
   overflow: hidden;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 60%, #f5576c 100%);
   padding: 6rem 2rem 3rem;
+  scroll-margin-top: 70px;
 }
 
 .hero__particles {
