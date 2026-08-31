@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="header__brand">Piyush Upadhyay</div>
+      <a href="#home" className="header__brand">Piyush Upadhyay</a>
 
       <button
         className={`header__hamburger${menuOpen ? ' header__hamburger--open' : ''}`}
